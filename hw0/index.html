@@ -17,10 +17,12 @@
             }
         </style>
     </head>
+
+    <div id="info">hw0.js <br /><a href="javascript:toggleTurn();">toggle</a></div>
+    <script src="https://threejs.org/build/three.min.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+
     <body>
-		<div id="info">hw0.js <br> <a href='javascript:toggleTurn();'>toggle</a></div>
-		<script src="https://threejs.org/build/three.min.js"></script>
-		<script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
         <script>
             var camera, scene, renderer;
             var train, angle = 0;
@@ -67,5 +69,5 @@
                 turn = !turn;
             }
         </script>
-	</body>
+    </body>
 </html>
