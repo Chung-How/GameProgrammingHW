@@ -61,10 +61,10 @@
                 this.vel = vel;
                 this.mesh = mesh;
                 scene.add(this.mesh);
-                this.light = new THREE.PointLight(this.mesh.material.color, 0.8);
+                this.light = new THREE.PointLight(this.mesh.material.color, 0.7);
 
                 this.light.position.copy(this.pos);
-                this.light.position.y += 100;
+                this.light.position.y += 1;
                 scene.add(this.light);
 
                 this.mesh.material.color = new THREE.Color().setHSL(Math.random(), 0.5, .7);
