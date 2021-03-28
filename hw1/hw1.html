@@ -146,7 +146,7 @@
         }
 
         function buildWallMesh1(mycolor) {
-            let wallMesh = new THREE.Mesh(new THREE.BoxGeometry(490, 40, 10), new THREE.MeshPhongMaterial({
+            let wallMesh = new THREE.Mesh(new THREE.BoxGeometry(500, 40, 10), new THREE.MeshPhongMaterial({
                 color: mycolor,
                 transparent: true,
                 opacity: 0.5
@@ -156,7 +156,7 @@
         }
 
         function buildWallMesh2(mycolor) {
-            let wallMesh = new THREE.Mesh(new THREE.BoxGeometry(410, 40, 10), new THREE.MeshPhongMaterial({
+            let wallMesh = new THREE.Mesh(new THREE.BoxGeometry(420, 40, 10), new THREE.MeshPhongMaterial({
                 color: mycolor,
                 transparent: true,
                 opacity: 0.5
@@ -184,16 +184,16 @@
             let controls = new THREE.OrbitControls(camera, renderer.domElement);
 
             let wallMesh = buildWallMesh1("#7B7B7B");
-            var wall1 = new Wall(0, 20, -200, wallMesh);
+            var wall1 = new Wall(0, 20, -205, wallMesh);
 
             wallMesh = buildWallMesh2("#7B7B7B");
-            var wall2 = new Wall(250, 20, 0, wallMesh.rotateY(90 * Math.PI / 180));
+            var wall2 = new Wall(255, 20, 0, wallMesh.rotateY(90 * Math.PI / 180));
 
             wallMesh = buildWallMesh1("#7B7B7B");
-            var wall3 = new Wall(0, 20, 200, wallMesh);
+            var wall3 = new Wall(0, 20, 205, wallMesh);
 
             wallMesh = buildWallMesh2("#7B7B7B");
-            var wall4 = new Wall(-250, 20, 0, wallMesh.rotateY(90 * Math.PI / 180));
+            var wall4 = new Wall(-255, 20, 0, wallMesh.rotateY(90 * Math.PI / 180));
 
             var floor = new THREE.Mesh(new THREE.PlaneGeometry(500, 400, 32), new THREE.MeshPhongMaterial({
                 color: 'lightgrey',
